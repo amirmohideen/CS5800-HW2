@@ -24,7 +24,10 @@ public class Main {
     System.out.println("");
 
     CarFactory teslaCarFactory2 = TransportFactory.createCarFactory("Tesla");
-    teslaCarFactory2.build();
+    System.out.println(teslaCarFactory.toString());
+    System.out.println(teslaCarFactory2.toString());
+    System.out.println((teslaCarFactory == teslaCarFactory2));
+    System.out.println("Attempt to create second Tesla Car Instance failed since both variables point to same address");
 
     System.out.println("\nAIRPLANE FACTORIES:");
 
@@ -49,7 +52,12 @@ public class Main {
     System.out.println("");
 
     AirplaneFactory airbusAirplaneFactory2 = TransportFactory.createAirplaneFactory("Airbus");
-    airbusAirplaneFactory2.build();
+
+    System.out.println(airbusAirplaneFactory.toString());
+    System.out.println(airbusAirplaneFactory2.toString());
+    System.out.println((airbusAirplaneFactory == airbusAirplaneFactory2));
+    System.out
+        .println("Attempt to create second Airbus Airplane Instance failed since both variables point to same address");
 
     System.out.println("\nBOAT FACTORIES:");
 
